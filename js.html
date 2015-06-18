@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>JS限制输入字数</title>
+<script type="text/javascript">
+function isNotMax(oinput){
+if( oinput.value.length >oinput.getAttribute("maxlength")){
+return oinput.value.substring(0,oinut.getAttribute("maxlength"));
+}else{
+return oinput.value;
+}
+}
+</script>
+</head>
+<body>
+<h3>JS限制输入字数1</h3>
+
+<input style="height:100px; width:600px; border:1px solid #333;"maxlength="10"></input>
+</body>
+</html>
